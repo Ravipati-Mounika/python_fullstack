@@ -25,8 +25,11 @@ function(event){
     let email=document.getElementById("email").value;
     let password=document.getElementById("password").value;
     if(!name||!email||!password){
-        alert("please fill in all ields.");
+        alert("please fill in all fields.");
         return;
     }
-    alert("Registration Successful!");
+    alert("Registration Successfull!");
+    console.log("Name:",name);
+    console.log("Email:",email);
+    console.log("Password:",password);
 });
