@@ -19,3 +19,16 @@ python3 app.py---no module flask
 . env/bin/activate
 pip install flask
 python3 app.py
+it for port is already used time
+lsof -i:5000
+kill -9 12345
+#status codes
+200 ok
+201 created
+204 no content
+400 bad request
+401 unauthorized
+403 forbidden
+404 not found
+500 internal server error
+03 service unavailable

@@ -11,13 +11,13 @@
         <h1>NRIIT Learning Management</h1>
         <p>Learning practice Get Placed</p>
         <nav>
-            <a href ="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="trainers.html">Trainers</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="contact.html">contact</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/trainers">Trainers</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/contact">Contact</a>
         </nav>
     </header>
     <main>
@@ -27,7 +27,7 @@
             </h2>
             <p>This NRIIT Management System helps etudents explore courses, register online, learn from experienced train and track their learning journey.</p>
             <p id="message">Learning never stop</p>
-            <img src="image/banner.png" alt="Lsm Banner" width="500" class="banner"><br>
+            <img src="{{url_for('static',filename='image/static/banner.png')}}" alt="Lsm Banner" width="500" class="banner"><br>
             <button onclick="showmessage()">Click Me</button><br>
             <button onclick="changeheading()">Change Headng</button><br>
             <button id="btnGreeting">Welcome</button>
@@ -58,6 +58,6 @@
            <a href="#">Instagram</a> |
            <a href="#">LinkedIn</a>
     </footer>
-    <script src="{{url_for('static' filename='js/static/.js')}}"></script>
+    <script src="{{url_for('static',filename='js/static/.js')}}"></script>
 </body>
 </html>

@@ -9,7 +9,18 @@
 </head>
 
 <body>
-    <header>Register</header>
+    <header>
+        <h1>Register</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/trainers">Trainers</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
     <main>
         <h2>Student Registration </h2>
         <form id="registerForm" method="POST" >
@@ -33,7 +44,7 @@
             <button type="submit" value="Register">Register</button>
         </form>
     </main>
- <script src="{{url_for('static' filename='js/static/.js')}}"></script>
+ <script src="{{url_for('static',filename='js/static/.js')}}"></script>
 </body>
 
 </html>
