@@ -40,13 +40,17 @@
                 <li>Placement Assistance</li>
             </ul>
         </section>
-        <section>
+         <section>
             <h2>Popular Courses</h2>
-            <article>
-                <h3>Python FullStack</h3>
-                <p>Learn HTML,CSS,JavaScript,SQL and Flask</p>
-            </article>
-        </section>
+           <div style="display: flex; align-items: center; gap: 10px;">
+           <span id="prevPopularCourseBtn" style="cursor: pointer; font-size: 32px; user-select: none;">&#10094;</span>
+           <article>
+            <h3 id="popularCourseName">Python FullStack</h3>
+          <p id="popularCourseDesc">Learn HTML, CSS, JavaScript, SQL and Flask</p>
+        </article>
+        <span id="nextPopularCourseBtn" style="cursor: pointer; font-size: 32px; user-select: none;">&#10095;</span>
+      </div>
+    </section>
     </main>
     <footer>
         <hr>

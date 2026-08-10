@@ -32,3 +32,7 @@ kill -9 12345
 404 not found
 500 internal server error
 303 service unavailable
+# SQL
+like "-a%" =>second letter in str in sql
+     "%a%" =>a in b/w in str in sql
+     "%a_" =>2nd letter in last in str in sql
