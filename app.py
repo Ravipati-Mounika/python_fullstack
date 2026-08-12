@@ -97,7 +97,7 @@ def api_login():
 def logout():
     session.pop("user_email",None)
     session.pop("user_name",None)
-    return jsonify({"status":"Success","message":"Logout Sucessful!"})        
+    return redirect(url_for("login"))       
 
 if __name__ == '__main__':
     app.run(debug=True)
