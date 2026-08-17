@@ -145,7 +145,7 @@ def update_tasks(tasks_id):
     status=data.get("status")
     conn=get_db_connection()
     cursor=conn.cursor()
-    cursor.execute("UPDATE tasks SET status=? WHERE id=?",(status,task id))
+    cursor.execute("UPDATE tasks SET status = ? WHERE id = ?", (status, task_id))
     conn.commit()
     conn.close()
     return jsonify({"status":"success","message":"Task updated successfully!"})
@@ -159,6 +159,6 @@ def delete_tasks(task_id):
     cursor.execute("DELETE FROM tasks WHERE user_email=? AND id=?",(user_email,task_id))
     conn.commit()
     conn.close()    
-     return jsonify({"status":"success","message":"Task deleted successfully!"})            
+    return jsonify({"status":"success","message":"Task deleted successfully!"})            
 if __name__ == '__main__':
     app.run(debug=True)
