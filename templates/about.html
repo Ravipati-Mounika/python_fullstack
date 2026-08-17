@@ -29,6 +29,18 @@
     </header>
     <main>
         <section>
+            <p>Welcome{{session.get('user_name')}}</p>
+            <h2>Here are your tasks</h2>
+            <h4>Manage your tasks here</h4>
+        </section>
+        <section>
+            <h3>Add tasks</h3>
+            <from id="addTaskFrom" action="/api/tasks" method="post">
+                
+            </from>
+        </section>
+    </main>
+        <section>
             <h2>About NRIIT</h2>
             <p>
                 NRIIT is committed to providing quality education in Python FullStack.
