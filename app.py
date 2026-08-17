@@ -115,7 +115,7 @@ def get_tasks():
     user_email=session.get("user_email")
     if not user_email:
         return jsonify({"status":
-        "error,"message":"No user loggd in!,Login please!"}),401
+        "error","message":"No user loggd in!,Login please!"}),401
     conn=get_db_connection()
     cursor=conn.cursor()
     cursor.execute("SELECT * FROM tasks WHERE user_email=?",(user_email,))
