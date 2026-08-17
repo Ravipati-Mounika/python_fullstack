@@ -126,7 +126,7 @@ def get_tasks():
 @app.route('/api/tasks',methods=['POST'])
 def add_tasks():
     if not user_email:
-        return jsonify({"status":"error,"message":"No user loggd in!,Login please!"}),
+        return jsonify({"status":"error","message":"No user logged in!, Login please!"}),
         401
         data=request.get_json()
         title=data.get("title")
