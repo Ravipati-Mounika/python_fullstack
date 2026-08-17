@@ -28,6 +28,14 @@ def init_db():
         course TEXT NOT NULL
     )
     """)
+    # create tasks table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS tasks(
+    id INTEGRE PRIMARY KEY AUTOINCREMENT,
+    user_email TEXT NOT NULL,
+    title TEXT NOT NULL,
+    status TEXT DEFAULT'pending)
+    """)
     conn.commit()
     conn.close()
 init_db()
