@@ -5,34 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename='css/static/style.css')}}">
-    <title>Tasks page</title>
+    <title>Task Page</title>
 </head>
 
 <body>
     <header>
         Home <br>
-        <h1> NRIIT Learning Management</h1>
+        <h1>NRIIT Learning Management</h1>
         <p>Learn Practice Get Placed</p>
         <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/courses">Courses</a>
-      <a href="/trainers">Trainers</a>
-      {% if session.get('user_email')%}
-      <a href="/tasks">MY Tasks</a>
-      <a href="/logout">Logout</a>
-      {% else %}
-      <a href="/register">Register</a>
-      <a href="/login">Login</a>
-      {% endif%}
-      <a href="/contact">Contact</a>
-    </nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/trainers">Trainers</a>
+            {% if session.get('user_email') %}
+            <a href="/tasks">My Tasks</a>
+            <a href="/logout">Logout</a>
+            {% else %}
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            {% endif %}
+            <a href="/contact">Contact</a>
+        </nav>
     </header>
-     <main>
+    <main>
         <section>
             <p>Welcome {{session.get('user_name')}}</p>
             <h2>Here are your tasks</h2>
             <h4>Manage your tasks here</h4>          
+            <ul id="taskList"></ul>
         </section>
         <section>
             <h3>Add tasks</h3>
